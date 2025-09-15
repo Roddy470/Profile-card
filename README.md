@@ -27,7 +27,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: https://github.com/Roddy470/Profile-card
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://profile-card-io.netlify.app
 
 ## My process
 
