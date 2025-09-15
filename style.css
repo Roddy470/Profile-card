@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;;
+    font-style: normal;
+}
+
+*::selection {
+    background-color: hsl(185, 75%, 39%);
+    color: #fff;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top, .bottom {
+    z-index: -1;
+    position: fixed;
+}
+
+.top {
+    width: 60%;
+    height: auto;
+    left: -12%;
+    top: -60%;
+}
+
+.bottom {
+    width: 60%;
+    height: auto;
+    right: -12%;
+    bottom: -75%;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    width: 250px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-content > img {
+    width: 28%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid hsl(0, 0%, 100%);
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card .card-content .info {
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+.card .card-content .info h1 {
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 7px;
+}
+
+.card .card-content .info h1 span {
+    color: hsl(227, 10%, 46%);
+}
+
+.card .card-content .info p {
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.card .card-content .details {
+    border-top: 2px solid hsl(225, 10%, 92%);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 35px;
+}
+
+.card .card-content .details .detail h1 {
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.card .card-content .details .detail p {
+    font-size: 10px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+@media (max-width: 1200px) {
+    .top {
+        top: -40%;
+    }
+
+    .bottom {
+        bottom: -55%;
+    }
+}
+
+@media (max-width: 900px) {
+    .top {
+        top: -20%;
+    }
+
+    .bottom {
+        bottom: -35%;
+    }
+}
+
+@media (max-width: 500px) {
+    .top {
+        width: 140%;
+        top: -38%;
+        left: -80%;
+    }
+
+    .bottom {
+        width: 170%;
+        right: -110%;
+        bottom: -48%;
+    }
+}
+
+@media (max-width: 380px) {
+    .top {
+        width: 160%;
+        top: -40%;
+        left: -90%;
+    }
+
+    .bottom {
+        width: 170%;
+        right: -110%;
+        bottom: -43%;
+    }
+}
+
+@media (max-width: 330px) {
+    .top {
+        width: 180%;
+        top: -42%;
+        left: -110%;
+    }
+
+    .bottom {
+        width: 170%;
+        right: -100%;
+        bottom: -40%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .top {
+        width: 40%;
+        top: -70%;
+        left: -10%;
+    }
+
+    .bottom {
+        width: 45%;
+        right: -20%;
+        bottom: -100%;
+    }
+}
